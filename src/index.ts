@@ -47,7 +47,7 @@ app.use(cors(corsOptions));
 app.use("/auth", OauthRouter);
 
 app.get("/", (req, res) => {
-    res.send("SWS NEW SERVER IS UP!!")
+    res.send("ShubhDEVs Oauth Guide SERVER IS UP!!")
 })
 
 app.listen(PORT, () => {
