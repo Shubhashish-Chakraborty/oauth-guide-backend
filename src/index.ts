@@ -6,6 +6,7 @@ import express from 'express';
 import cors from 'cors';
 import { PORT } from './config';
 import { OauthRouter } from './routes/oauth';
+import { UserRouter } from './routes/user';
 
 const app = express();
 
@@ -45,6 +46,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use("/auth", OauthRouter);
+app.use("/api/v1/auth/user" , UserRouter)
 
 app.get("/", (req, res) => {
     res.send("ShubhDEVs Oauth Guide SERVER IS UP!!")
