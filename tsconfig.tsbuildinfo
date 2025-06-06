@@ -1,0 +1,1 @@
+{"root":["./src/config.ts","./src/index.ts","./src/config/passport.ts","./src/db/prisma.ts","./src/routes/oauth.ts","./src/utils/generatehash.ts","./src/utils/randomcontact.ts"],"version":"5.8.3"}
